@@ -120,13 +120,11 @@ window.addEventListener("scroll", () => {
 
 });
 
-
 /*==========================================
  PRODUCT FILTER
 ==========================================*/
 
 const filterButtons = document.querySelectorAll(".filter-buttons button");
-
 const products = document.querySelectorAll(".product-card");
 
 filterButtons.forEach(button => {
@@ -134,24 +132,15 @@ filterButtons.forEach(button => {
     button.addEventListener("click", () => {
 
         filterButtons.forEach(btn => btn.classList.remove("active"));
-
         button.classList.add("active");
 
         const filter = button.dataset.filter;
 
         products.forEach(product => {
 
-            if (filter === "all") {
+            if (filter === "all" || product.dataset.category === filter) {
 
-                product.style.display = "block";
-
-                return;
-
-            }
-
-            if (product.dataset.category === filter) {
-
-                product.style.display = "block";
+                product.style.display = "";
 
             } else {
 
@@ -164,7 +153,6 @@ filterButtons.forEach(button => {
     });
 
 });
-
 
 /*==========================================
  LIGHTBOX GALLERY

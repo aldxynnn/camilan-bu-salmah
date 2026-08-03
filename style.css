@@ -812,17 +812,11 @@ gap:35px;
 .product-card{
 
 background:#fff;
-
-border-radius:22px;
-
+border-radius:25px;
 overflow:hidden;
-
 box-shadow:var(--shadow);
 
-transition:.35s;
-
 display:flex;
-
 flex-direction:column;
 
 }
@@ -863,6 +857,8 @@ flex-direction:column;
 
 gap:18px;
 
+flex:1;
+
 }
 
 .product-info h3{
@@ -886,6 +882,7 @@ flex:1;
 .product-info .btn-primary{
 
 width:100%;
+margin-top:auto;
 
 }
 
