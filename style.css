@@ -1822,6 +1822,14 @@ grid-template-columns:1fr;
 
 }
 
+.order-list i{
+
+    color:#fff;
+    margin-right:10px;
+    font-size:15px;
+
+}
+
 .product-grid{
 
 grid-template-columns:1fr;
@@ -1951,6 +1959,10 @@ gap:10px;
 padding:10px 18px;
 
 font-size:14px;
+
+ color: var(--text);
+    -webkit-appearance: none;
+    appearance: none;
 
 }
 
